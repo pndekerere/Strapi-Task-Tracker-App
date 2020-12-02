@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "name": "task",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "pinned": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}
